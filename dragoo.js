@@ -8,7 +8,7 @@ const fs = require('fs');
   const proxyList = await getProxyList('proxy.txt');
   const userAgentList = await getUserAgentList('ua.txt');
   const headers = {
-    'User-Agent': userAgentList[0] + 'x-attacker',
+    'User-Agent': userAgentList[0], //+ 'x-attacker',
     'Accept-Encoding': 'gzip, deflate',
     'Accept-Language': 'en-US,en;q=0.9',
     Connection: 'keep-alive',

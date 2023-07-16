@@ -11,7 +11,7 @@ const fs = require('fs');
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0 Chrome/100.0.0.0 Safari/100.0.0.0 Edge/100.0.0.0 AppleWebKit/100.0.0.0 (KHTML, like Gecko) Chrome/100.0.0.0 Mobile/100.0.0.0 Safari/100.0.0.0 OPR/100.0.0.0 (Edition YX 10) Opera/100.0.0.0 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.0.0 Safari/537.36 Edg/100.0.0.0',  ////userAgentList[0], //+ 'x-attacker',
     'Accept-Encoding': 'gzip, deflate',
     'Accept-Language': 'en-US,en;q=0.9',
-    Connection: 'keep-alive',
+    'Connection': 'keep-alive',
     'X-Attacker': 'yes',
   };
   const browser = await puppeteer.launch({ args: [`--proxy-server=${proxyList[0]}`] });
